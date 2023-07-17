@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import "./BookCreate.css";
+import useBooksContext from "../Hooks/user-books-context";
 
-const BookCreate = ({ bookCreate }) => {
+const BookCreate = () => {
+
+    const { createBookHandler } = useBooksContext();
 
     const [bookName, setBookName] = useState("");
 
     const bookCreateHandler = (event) => {
         event.preventDefault();
-        bookCreate(bookName);
+        createBookHandler(bookName);
         setBookName("");
     }
 

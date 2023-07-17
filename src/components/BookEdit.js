@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import "./BookEdit.css";
+import useBooksContext from "../Hooks/user-books-context";
 
-const BookEdit = ({ book, onEditBookHandler , hideEditFormHandler }) => {
 
+const BookEdit = ({ book,hideEditFormHandler }) => {
+    const {onEditBookHandler} = useBooksContext();
     const [title, setTitle] = useState(book.title);
     const bookEditHandler = (e) => {
         e.preventDefault();

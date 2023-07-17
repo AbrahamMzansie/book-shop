@@ -1,16 +1,17 @@
 import React from 'react';
+import useBooksContext from "../Hooks/user-books-context";
+
 import "./BookList.css";
 import BookShow from "./BookShow";
 
-const BookList = ({ bookList, onDeleteBookHandler, onEditBookHandler }) => {
+const BookList = () => {
+const {bookList} = useBooksContext();
+    
     return (
         <div className='bookList'>
             {bookList.map((book) => (
-                <BookShow onDeleteBookHandler={onDeleteBookHandler}
-                    onEditBookHandler={onEditBookHandler}
-                    key={book.id} book={book} />
-            ))}
-
+                <BookShow key={book.id} book={book} />
+            ))}            
         </div>
     )
 }

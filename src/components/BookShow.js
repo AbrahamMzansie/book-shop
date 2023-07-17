@@ -1,8 +1,11 @@
 import React from 'react';
 import "./BookShow.css";
 import BookEdit from './BookEdit';
+import useBooksContext from "../Hooks/user-books-context";
 
-const BookShow = ({ book, onDeleteBookHandler , onEditBookHandler }) => {
+
+const BookShow = ({ book}) => {
+    const {onDeleteBookHandler} = useBooksContext();
 
     const [showEdit, setShowEdit] = React.useState(false);
     const deleteBookHandler = (id) => {
@@ -15,8 +18,6 @@ const BookShow = ({ book, onDeleteBookHandler , onEditBookHandler }) => {
     const hideEditFormHandler = () => {
         setShowEdit(false);
     }
-
-
     return (
         <div className='bookShow-container'>
             <img className="book-image" alt = "books" src={`https://picsum.photos/seed/${book.id} /200`}/>
@@ -28,8 +29,7 @@ const BookShow = ({ book, onDeleteBookHandler , onEditBookHandler }) => {
                 <p>{book.title}</p>
             </div>
             <div className='edit-book-container'>
-                {showEdit && <BookEdit 
-                 onEditBookHandler = {onEditBookHandler}
+                {showEdit && <BookEdit                 
                  hideEditFormHandler = {hideEditFormHandler}
                  book = {book} />}
             </div>
