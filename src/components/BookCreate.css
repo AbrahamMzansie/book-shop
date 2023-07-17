@@ -1,0 +1,40 @@
+.bookCreate{
+    display: flex;
+    flex-direction: column;
+    margin : 20px auto;
+    width : 50%;
+    background-color: beige;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.bookCreate-form{
+  display: flex;
+  width : 300px;
+  flex-direction: column;
+  margin : 30px auto;  
+}
+.bookCreate h2{
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;   
+    
+}
+.bookCreate-form input {
+    padding : 10px 20px;
+    color : black;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;   
+}
+.bookCreate-form button{
+    border : none;
+    border-radius: 20px;
+    padding : 10px 30px;
+    background-color: brown;
+    color : white;
+    font-weight: bold;
+    width: 200px;
+    margin: auto ;
+    align-items: center;
+    cursor : pointer;
+}

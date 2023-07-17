@@ -1,0 +1,53 @@
+.bookShow-container {
+    /* display : flex;
+    flex-direction: row; */
+    word-wrap: break-word;
+    position: relative !important;
+    width: 300px;
+    height: auto;;
+    background-color: blanchedalmond;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.title{
+    margin-top: 250px;
+}
+    
+
+.book-show-button {
+    position: absolute !important;
+    right: 5px;
+    top: 5px;   
+
+}
+.edit-book{
+    border : none;
+    border-radius: 20px;
+    padding : 10px 20px;
+    background-color: rgb(115, 90, 226);
+    color : white;
+    font-weight: bold;
+    width: 100px;
+    margin: auto ;
+    align-items: center;
+    cursor : pointer;
+}
+.delete-book{
+    border : none;
+    border-radius: 20px;
+    padding : 10px 20px;
+    background-color: rgb(239, 79, 89);
+    color : white;
+    font-weight: bold;
+    width: 100px;
+    margin: auto ;
+    align-items: center;
+    cursor : pointer;
+}
+.book-image{
+    position : absolute;
+    top : 50px;
+    left : 50px;
+   
+
+}

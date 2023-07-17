@@ -1,0 +1,23 @@
+.edit-book-wrapper{
+
+}
+.edit-book-wrapper input {
+    padding : 10px 20px;
+    color : black;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;   
+}
+.edit-book-wrapper button{
+    border : none;
+    border-radius: 10px;
+    padding : 10px 30px;
+    background-color: brown;
+    color : white;
+    font-weight: bold;
+    width: 200px;
+    margin: auto ;
+    align-items: center;
+    cursor : pointer;
+    margin-bottom: 10px;
+}
